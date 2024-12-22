@@ -42,7 +42,7 @@ function ContactForm() {
       });
 
       if (res.data.success) {
-        toast.success("Message sent! I'll get back to you soon via email.");
+        toast.success("Message sent! I&apos;ll get back to you soon via email.");
         setUserInput({
           name: "",
           email: "",
@@ -63,15 +63,16 @@ function ContactForm() {
   return (
     <div>
       <h2 className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-        Let's Connect!
+        Let&apos;s Connect!
       </h2>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">
-          I'm always interested in hearing about new projects and opportunities.
+          I&apos;m always interested in hearing about new projects and opportunities.
           Whether you have a question, want to collaborate, or just want to say
-          hi - I'd love to hear from you!
+          hi - I&apos;d love to hear from you!
         </p>
         <form onSubmit={handleSendMail} className="mt-6 flex flex-col gap-4">
+          {/* Rest of the form JSX remains the same */}
           <div className="flex flex-col gap-2">
             <label htmlFor="name" className="text-base">
               Name
